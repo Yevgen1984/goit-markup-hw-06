@@ -735,6 +735,8 @@ border-color: rgba(255, 255, 255, 0.3);
   }
 
  .submit {
+    position: relative;
+    top: 1px;
         width: 200px;
         height: 50px;
         margin-left: 12px;
@@ -749,6 +751,15 @@ border-color: rgba(255, 255, 255, 0.3);
         padding-top: 0;
         /* margin-bottom: 90px; */
 }
+
+.sign-up {
+  
+}
+
+.sign-up-social-icon {
+  
+}
+
 
       .registration {
         width: 358px;
@@ -957,8 +968,23 @@ border-color: rgba(255, 255, 255, 0.3);
       font-size: 14px;
       line-height: 1.7;
       color: var(--contact-text-color);
+      text-underline-position: under;
     }
+
     .conditions {
       color: var(--accent-color);
       text-decoration: underline;
     }
+
+    .checkbox {
+      -webkit-appearance:none;
+       -moz-appearance:none;
+            appearance:none;
+    }
+
+    .form:focus-within {
+      border-color: var(--accent-color);
+    }
+
+
+    text-underline-position: under;
