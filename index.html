@@ -75,7 +75,7 @@
           
           <h1 class="hero-title">ЭФФЕКТИВНЫЕ РЕШЕНИЯ ДЛЯ ВАШЕГО БИЗНЕСА</h1>
         
-          <button type="button" class="button" data-modal-open>Заказать услугу</button>
+          <button type="button" class="button button-hero" data-modal-open>Заказать услугу</button>
          
           
          
@@ -387,23 +387,25 @@
 
        
             
-            <div class="invite">
-            <form>
+            
+            <form class="form-field">
              
                  <h3 class="invite-title">ПІДПИШИТЬСЯ НА РОЗСИЛКУ</h3>
-              <label for="user-name" >
-              <input type="email" name="ПІДПИШИТЬСЯ НА РОЗСИЛКУ" id="user-name"
+
+              <div class="field-box">
+
+              <input class="field-input" type="email" name="ПІДПИШИТЬСЯ НА РОЗСИЛКУ" id="user-name"
             placeholder="E-mail"/>
-              </label>
-             
-         
-            <button type="submit" class="submit"><span class="sign-up">Підписатися</span><svg class="sign-up-social-icon" width="24px" height="24px">
+              
+                    
+            <button type="submit" class="submit button">Підписатися<span class="sign-up"><svg  width="24px" height="24px">
+              
               <use href="./images/icons.svg#icon-icon-send-message"></use>
-                </svg>
+                </svg></span>
         </button>
-      
+      </div>
           </form>
-        </div>
+       
         </footer>
 
         <div class="backdrop is-hidden" data-modal>
@@ -450,16 +452,37 @@
               </svg>
               </div>
 
+             
+             
               <div class="form-input comment-space">
               <label class="form-label">
                 Коментар
                 <textarea class="comment" name="Коментар" rows="8" placeholder="Введіть текст..."></textarea>
               </label>
 
-              <div class="agreement">
-              <input type="checkbox" name="" value="Погоджуюся з розсилкою та приймаю Умови договору" id=""/> 
-              <label for="Погоджуюся з розсилкою та приймаю Умови договору" class="agreement-on">Погоджуюся з розсилкою та приймаю <span class="conditions">Умови договору</span></label>
-            </div>
+             <!-- <div class="agreement">
+
+                <label class="check" for="Погоджуюся з розсилкою та приймаю Умови договору" >
+              
+                  <input clas="check__input" type="checkbox"/> 
+                   <span class="check__box">Погоджуюся з розсилкою та приймаю <span class="conditions">Умови договору</span></span>
+              <svg class="form-icon icon-agree">
+                <use href="./images/icons.svg#icon-icon-check-1" width="16px" height= "15px" class="modal-icon">
+                </svg>
+                 
+
+              
+              </label>*/
+
+            </div>-->
+
+            <label class="Check option">
+              <input class="check__input" type="checkbox">
+              
+              
+              <span class="check__box"></span>
+              <span class="check__accept">Погоджуюся з розсилкою та приймаю <span class="check__conditions">Умови договору</span></span>
+                </label>
               
               <button class="form-button" type="submit">Відправити</button>
               
@@ -475,5 +498,11 @@
         </body>
 
         </html>
+
+        
+
+
+
+
 
         
