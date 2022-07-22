@@ -400,7 +400,7 @@
                     
             <button type="submit" class="submit button">Підписатися<span class="sign-up"><svg  width="24px" height="24px">
               
-              <use href="./images/icons.svg#icon-icon-send-message"></use>
+              <use class="submit-button-icon" href="./images/icons.svg#icon-icon-send-message"></use>
                 </svg></span>
         </button>
       </div>
@@ -421,14 +421,19 @@
            <form class="form">
               <h3 class="form-title">Залиште свої дані, ми вам передзвонимо</h3>
               
-               <div class="name-field">
+               
+               
+              
+              
+              
+              <div class="name-field">
 
               <div class="form-input visiter">
               <label for="name" class="form-label">Ім'я</label>
              
               <input type="name" name="name" id="name" placeholder="">
-              <svg class="form-icon name">
-              <use href="./images/icons.svg#icon-human-icon-form" width="11px" height= "11px" class="modal-icon">
+              <svg width="16px" height="16px" class="form-icon name">
+              <use href="./images/icons.svg#icon-human-icon-form"  class="modal-icon">
               </svg>
               </div>
  
@@ -437,8 +442,8 @@
               <label for="tel" class="form-label">Телефон</label>
              
               <input type="tel" name="tel" id="tel" placeholder="">
-              <svg class="form-icon phone">
-              <use href="./images/icons.svg#icon-phone-icon-form" width="11px" height= "11px" class="modal-icon">
+              <svg width="16px" height="16px" class="form-icon phone">
+              <use href="./images/icons.svg#icon-phone-icon-form"  class="modal-icon">
               </svg>
 
               </div>
@@ -447,8 +452,8 @@
               <label for="email" class="form-label">Пошта</label>
                 
               <input type="email" name="email" id="email" placeholder="">
-              <svg class="form-icon envelope">
-              <use href="./images/icons.svg#icon-envelope-form" width="11px" height= "11px" class="modal-icon">
+              <svg width="16px" height= "16px" class="form-icon envelope">
+              <use href="./images/icons.svg#icon-envelope-form" class="modal-icon">
               </svg>
               </div>
 
@@ -476,13 +481,19 @@
 
             </div>-->
 
-            <label class="Check option">
-              <input class="check__input" type="checkbox">
+            <label class="form__checkbox">
               
+              <input type="checkbox" class="checkbox">
+                <span class="form__checkbox-icon"><svg width="16px" height="16px" class="form__check-icon">
+                  <use href="./images/icons.svg#icon-agree">
+                  </svg></span>
               
-              <span class="check__box"></span>
-              <span class="check__accept">Погоджуюся з розсилкою та приймаю <span class="check__conditions">Умови договору</span></span>
-                </label>
+              <span class="form__checkbox-text">Погоджуюся з розсилкою та приймаю  <span class="check__conditions">
+                
+                <a class="form__checkbox-link" href="#">Умови договору</a></span>
+                
+            
+            </label>
               
               <button class="form-button" type="submit">Відправити</button>
               
